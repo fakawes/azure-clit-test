@@ -22,7 +22,7 @@ jobs:
   - script: |
 
       az --version
-      az appservice plan create \
+      az appservice plan create 
       --name wessel-web-app \
       --resource-group  Mixit2-rg \
       --sku B1 \
