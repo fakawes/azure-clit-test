@@ -2,9 +2,19 @@
 
 name: hello-world
 on: push
+
+
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
         run: echo "Hello World!"
+      
+      - name: Azure CLI script
+      uses: azure/login@v1 
+      with: 
+        azcliversion: 2.30.0
+        inlinScript: | 
+          az account show
+          az storage -h
