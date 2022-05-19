@@ -27,8 +27,9 @@ jobs:
       --resource-group  Mixit2-rg \
       --sku B1 \
       --is-linux
+      
 
-    az webapp create \
+      az webapp create \
       --name wessel-azcli-test\
       --plan wessel-web-app \
       --resource-group Mixit2-rg \
