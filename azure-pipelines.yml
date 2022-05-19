@@ -15,7 +15,7 @@ jobs:
 
   pool:
 
-    name: Default
+    name: Azure Pipelines
 
   steps:
 
