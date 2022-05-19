@@ -22,16 +22,5 @@ jobs:
   - script: |
 
       az --version
-      az appservice plan create 
-      --name pipeline-test \
-      --resource-group  Mixit2-rg \
-      --sku B1 \
-      --is-linux
-      
 
-      az webapp create \
-      --name pipeline-test\
-      --plan pipeline-test \
-      --resource-group Mixit2-rg \
-      --runtime "Python|3.7" \
-      --deployment-local-git
+      az login
