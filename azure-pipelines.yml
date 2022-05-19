@@ -25,7 +25,7 @@ jobs:
 
       az --version
 
-      echo RESOURCE_GROUP_NAME
+      echo var$(RESOURCE_GROUP_NAME)
 
       az login
       # az appservice plan create --name WEB_APP_NAME --resource-group RESOURCE_GROUP_NAME --sku SKU_NAME
