@@ -4,9 +4,11 @@
 # https://aka.ms/yaml
 
 trigger:
-
 - main
 
+variables:
+  -name: RESOURCE_GROUP_NAME
+  value: Mixit2-rg
 
 
 jobs:
@@ -23,4 +25,7 @@ jobs:
 
       az --version
 
+      echo RESOURCE_GROUP_NAME
+
       az login
+      # az appservice plan create --name WEB_APP_NAME --resource-group RESOURCE_GROUP_NAME --sku SKU_NAME
